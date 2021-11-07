@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="style.css" />
+		<title>E-commerce product page | Yuri March | Frontend Mentor</title>
+	</head>
+	<body>
+		<header>
+			<nav class="flex">
+				<div class="menu">
+					<ul class="menu-items flex">
+						<img src="./images/icon-menu.svg" alt="" />
+						<li><a class="title hidden" href="#collections">Collections</a></li>
+						<li><a class="title hidden" href="#men">Men</a></li>
+						<li><a class="title hidden" href="#women">Women</a></li>
+						<li><a class="title hidden" href="#about">About</a></li>
+						<li><a class="title hidden" href="#contact">Contact</a></li>
+						<li>
+							<a class="logo" href="#"> <img src="images/logo.svg" /></a>
+						</li>
+					</ul>
+				</div>
+
+				<aside>
+					<ul class="flex sidebar">
+						<li class="cart">
+							<a href="#cart"><img src="images/icon-cart.svg" /></a>
+						</li>
+						<li class="avatar">
+							<a href="#profile"><img src="images/image-avatar.png" alt="Profile Picture" /></a>
+						</li>
+					</ul>
+				</aside>
+			</nav>
+		</header>
+
+		<main>
+			<section>
+				<div class="product-info container">
+					<div class="carousel">
+						<img src="images/image-product-1-thumbnail.jpg" alt="Product Image" />
+					</div>
+					<div class="product-details">
+						<h1 class="company-title">Sneaker Company</h1>
+						<h2 class="product-title">Fall Limited Edition Sneakers</h2>
+						<p class="product-description">
+							These low-profile sneakers are your perfect casual wear companion. Featuring a durable
+							rubber outer sole, they’ll withstand everything the weather can offer.
+						</p>
+						<div class="price-container flex">
+							<span class="discounted-price">$125.00</span>
+							<span class="discount">50%</span>
+							<span class="full-price">$250.00</span>
+						</div>
+						<div class="product-buttons">
+							<input type="number" name="item-number" id="item-number" />
+							<button class="button-primary">Add to Cart</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
