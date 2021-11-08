@@ -60,11 +60,7 @@ main {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	margin: 1rem;
-}
-
-.menu-items {
-	justify-content: center;
+	margin: 0.5rem;
 }
 
 .logo {
@@ -94,7 +90,9 @@ aside {
 	margin: 1rem;
 }
 
-.product-details * {
+.product-details h1,
+.product-details h2,
+.product-details p {
 	margin-bottom: 2rem;
 }
 
@@ -118,4 +116,76 @@ aside {
 
 .price-container {
 	margin: 0;
+	margin-bottom: 2rem;
+	justify-content: flex-start;
+	gap: 1rem;
+}
+
+.price-container * {
+	margin: 0;
+}
+
+.discount {
+	padding: 0.2rem 0.4rem;
+	border-radius: 0.3rem;
+	font-weight: var(--font-weight-bold);
+	color: var(--primary-color);
+	background-color: var(--secondary-color);
+}
+
+.full-price {
+	text-decoration: line-through;
+	color: var(--grayish-blue);
+	margin-left: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	border: 0;
+}
+
+.amount-controller {
+	background-color: var(--light-grayish-blue);
+	margin: 0;
+	align-items: center;
+	height: 3rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.amount-btn {
+	border: none;
+	background: none;
+	margin: 0;
+	padding: 0.5rem 1rem;
+	cursor: pointer;
+}
+
+.num-products {
+	font-weight: var(--font-weight-bold);
+	color: var(--black);
+}
+
+.add-to-cart-btn {
+	width: 100%;
+	height: 3rem;
+	background: var(--primary-color);
+	color: var(--white);
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	font-weight: var(--font-weight-bold);
+	cursor: pointer;
+	border: none;
+	justify-content: center;
+	gap: 1rem;
+	margin: 0;
+}
+
+.add-to-cart-btn img:hover {
+	fill: white;
+}
+
+.change-my-color:hover {
+	color: white;
 }
