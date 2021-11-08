@@ -81,9 +81,14 @@ aside {
 	flex-direction: column;
 }
 
-.carousel img {
+.swiper-slide img {
 	width: 100%;
-	max-height: 50vh;
+	height: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: var(--white);
 }
 
 .product-details {
@@ -162,7 +167,7 @@ input::-webkit-inner-spin-button {
 	cursor: pointer;
 }
 
-.num-products {
+.quantity {
 	font-weight: var(--font-weight-bold);
 	color: var(--black);
 }

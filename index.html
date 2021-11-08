@@ -11,6 +11,8 @@
 			rel="stylesheet"
 		/>
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<!-- <link rel="stylesheet" href="sweetalert2.min.css"> -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 		<link rel="stylesheet" href="style.css" />
 		<title>E-commerce product page | Yuri March | Frontend Mentor</title>
 	</head>
@@ -45,11 +47,27 @@
 		</header>
 
 		<main>
-			<section>
-				<div class="product-info container">
-					<div class="carousel">
-						<img src="images/image-product-1-thumbnail.jpg" alt="Product Image" />
+			<section class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/image-product-1.jpg" alt="Product Image" />
 					</div>
+					<div class="swiper-slide">
+						<img src="images/image-product-2.jpg" alt="Product Image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/image-product-3.jpg" alt="Product Image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/image-product-4.jpg" alt="Product Image" />
+					</div>
+				</div>
+				<div class="swiper-button-prev"></div>
+  			<div class="swiper-button-next"></div>
+				<div class="swiper-pagination"></div>
+			</section>
+			<section>
+				<div class="product-info container">					
 					<div class="product-details">
 						<h1 class="company-title">Sneaker Company</h1>
 						<h2 class="product-title">Fall Limited Edition Sneakers</h2>
@@ -67,7 +85,7 @@
 								<button class="amount-btn decrement">
 								 <img src="./images/icon-minus.svg">
 								</button>
-								<span class="num-products">0</span>
+								<span class="quantity">0</span>
 								<button class="amount-btn increment">
 									 <img src="./images/icon-plus.svg">
 								</button>							
@@ -78,5 +96,8 @@
 				</div>
 			</section>
 		</main>
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+		<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
